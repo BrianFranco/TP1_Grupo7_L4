@@ -43,7 +43,7 @@ public class Empleado {
 	}
 	@Override
 	public String toString() {
-		return "Empleado ID " + id + ", se llama " + nombre + " de " + edad + " años de edad" ;
+		return "Empleado ID " + id + ", se llama " + nombre + " y tiene " + edad + " años de edad" ;
 	}
 
 	public void setEdad(int edad) {
