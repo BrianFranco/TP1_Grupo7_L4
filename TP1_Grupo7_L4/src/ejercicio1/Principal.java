@@ -8,29 +8,23 @@ package ejercicio1;
 public class Principal {
 
 	public static void main(String[] args) {
-		Empleado emp1 = new Empleado();
-		emp1.setNombre("Pedro");
-		emp1.setEdad(29);
-		System.out.println(emp1.toString());
+			
+		Empleado[] vEmp = new Empleado[5];
+		vEmp[0] = new Empleado("Juan",30);
+		vEmp[1] = new Empleado();
+		vEmp[2] = new Empleado("Matu",40);
+		vEmp[3] = new Empleado();
+		vEmp[4] = new Empleado();
+		vEmp[4].setNombre("Maxi");
+		vEmp[4].setEdad(50);
 		
-        Empleado emp2 = new Empleado();
+		for (Empleado empleado : vEmp) {
+			
+			System.out.println(empleado.toString());
+		}
 		
-		System.out.println(emp2.toString());
+		System.out.println("El Proximo ID será el: " + Empleado.devuelveProximoID());
 		
-		Empleado emp3 = new Empleado();
-		emp3.setNombre("Juan");
-		emp3.setEdad(44);
-		System.out.println(emp3.toString());
-		
-		Empleado emp4 = new Empleado();
-		
-		System.out.println(emp4.toString());
-		
-		Empleado emp5 = new Empleado();
-		emp5.setNombre("Lucas");
-		emp5.setEdad(34);
-		System.out.println(emp5.toString());
-		System.out.println(Empleado.devuelveProximoID());
 
 	}
 

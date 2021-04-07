@@ -4,12 +4,14 @@ public class Empleado {
 	
 	//Attributes
 	
-    private int id;
+    private final int id;
     private String nombre;
     private int edad;
     
     private static int numeroEmpleado = 999;
     
+    
+    //Constructors
     public Empleado() {
     	numeroEmpleado++;
     	this.id = numeroEmpleado;
@@ -29,9 +31,6 @@ public class Empleado {
 	public int getId() {
 		return id;
 	}
-	public void setId(int id) {
-		this.id = id;
-	}
 	public String getNombre() {
 		return nombre;
 	}
@@ -41,15 +40,16 @@ public class Empleado {
 	public int getEdad() {
 		return edad;
 	}
-	@Override
-	public String toString() {
-		return "Empleado ID " + id + ", se llama " + nombre + " y tiene " + edad + " años de edad" ;
-	}
-
 	public void setEdad(int edad) {
 		this.edad = edad;
 	}
 	
+	//toString
+		@Override
+		public String toString() {
+			return "Empleado " + nombre + ", Edad: " + edad + ", Legajo: " + id;
+		}
+	//Method
 	public static int devuelveProximoID() {
 		return numeroEmpleado + 1;
 	}
