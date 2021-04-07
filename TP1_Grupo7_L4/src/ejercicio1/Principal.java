@@ -2,13 +2,13 @@ package ejercicio1;
 
 
 
-//Participantes: Brian Franco - Agustin Paez -
+//Participantes:Brian Franco-Agustin Paez-Ignacio Keegan-Nethzer Carpio-Victor Revilla
 
 
 public class Principal {
 
 	public static void main(String[] args) {
-			
+		
 		Empleado[] vEmp = new Empleado[5];
 		vEmp[0] = new Empleado("Juan",30);
 		vEmp[1] = new Empleado();
